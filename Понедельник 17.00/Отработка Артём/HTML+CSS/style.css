@@ -1,0 +1,41 @@
+* {
+	/*Размер элемента считается по его границе*/
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body {
+	/*Внешний отступ*/
+	margin: 0;
+	/*Цвет фона*/
+	background-color: #eee;
+}
+
+header {
+	/*Высота*/
+	height: 80px;
+	/*Ширина*/
+	width: 70%;
+	background-color: dodgerblue;
+	color: white;
+	/*Одинаковые внешние отступы*/
+	margin: auto;
+	/*Способ отображения этого элемента - гибкий*/
+	display: flex;
+	/*Вертикальное выравнивание внутренних элементов*/
+	vertical-align: middle;
+	/*Горизонтальное выравнивание*/
+	justify-content: center;
+}
+
+main {
+	width: 70%;
+	background-color: white;
+	margin: auto;
+	/*Внутрение отступы*/
+	padding: 10px 20px;
+}
+
+img {
+	width: 100%;
+}

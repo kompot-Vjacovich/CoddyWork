@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		.main {
+			width: 500px;
+			height: 400px;
+			border: darkgray dashed 5px; /*Граница: цвет, стиль, толщина*/
+			margin: 20px auto;		/*Отступ сверху и снизу = 100px, а слева и справа автоматический*/
+			display: flex;		/*Все элементы, находящиеся внутри данного элемента, распологаются в строчку*/
+		}
+		.first, .second, .third {
+			width: 100px;
+			height: 300px;
+			border: black solid 6px;
+			margin: auto;
+			position: relative;	/*Движение внутренних элементов будет осуществляться относительно данного элемента*/
+		}
+		#red, #green, #blue {
+			position: absolute;
+			bottom: 0;		/*Положение от низа*/
+			text-align: center;
+			font-size: 50px;
+		}
+		#red {
+			background-color: red;
+			width: 100px;
+			height: 70px;
+			transition: 1s ease-out;
+			color: rgba(255, 0, 0, 0);
+		}
+		#green {
+			background-color: green;
+			width: 100px;
+			height: 150px;
+			transition: 0.7s ease-out;
+			color: rgba(0, 255, 0, 0);
+		}
+		#blue {
+			background-color: blue;
+			width: 100px;
+			height: 250px;
+			transition: 0.4s ease-out;
+			color: rgba(0, 0, 255, 0);
+		}
+		#red:hover {
+			height: 300px;
+			transition: 1s linear;
+			background-color: salmon;
+			color: rgba(255, 0, 0, 1);
+		}
+		#green:hover{
+			height: 300px;
+			transition: 0.7s linear;
+			background-color: green ;
+			color: rgba(0, 255, 0, 1);
+		} 
+		#blue:hover { /*Стиль объекта при наведении курсора*/
+			height: 300px;
+			transition: 0.4s linear;
+			background-color: dodgerblue;
+			color: rgba(0, 0, 255, 1);
+		}
+		header {
+			width: 100px;
+			height: 50px;
+			background-color: grey;
+			border: black solid 2px;
+			border-radius: 20px;
+			margin: 20px auto;
+			transition: 0.7s ease-in;
+		}
+		header:hover {
+			width: 500px;
+			transition: 0.7s ease-out;
+		}
+	</style>
+</head>
+<body>
+	<header>Заголовок</header>
+	<div class="main">
+		<div class="first">
+			<div id="red">R</div>
+		</div>
+		<div class="second">
+			<div id="green">G</div>
+		</div>
+		<div class="third">
+			<div id="blue">B</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Викторина</title>
+	<!-- Подключаем библиотеку, которая упрощает доступ к элементам -->
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+<body>
+	<!-- Заголовок -->
+	<h1 id="header">Викторина</h1>
+	<!-- Кнопка запуска игры -->
+	<button id="play" onclick="play()">Играть</button>
+
+	<script>
+		function play() {
+			// Удаляем кнопку с id="play"
+			$("#play").remove();
+			// Добавляем элемент, в котором будет находиться вопрос викторины
+			// $("body").append('some text') -  вставить элемент 'some text' в конце
+			// элемента body
+			$("body").append('<p id="question"><b>Вопрос: </b>Назовите столицу Испании</p>');
+			// Добавили поле для ввода ответа
+			$("body").append('<input type="text" id="answer"></input>');
+			// Добавляем кнопку для отправки ответа
+			$("body").append('<button id="otvet" onclick="check()">Отправить</button>')
+		}
+
+		function check() {
+			
+			// Проверить ответ, который отправил пользователь
+			// .val() - метод, с помощью которого получаем значение поля input
+			let playerAns = $("#answer").val();
+			// Увеличили счёт на 1, если игрок правильно ответил на вопрос
+			if (playerAns == answers[0]) {
+				score = score + 1;
+			}
+			// Очищаем значение поля
+			$("#answer").val('');
+			// Удаляем использованный ответ из массива ответов
+			answers.shift();
+			if (answers.length != 0) {
+				// Меняем вопрос вопрос
+				let str = questions[0];
+				$("#question").text(str);
+				// Удаляем использованный вопрос из массива вопросов
+				questions.shift();
+			}
+			else {
+				// Удаляем лишние элементы
+				$("#question").remove();
+				$("#answer").remove();
+				$("#otvet").remove();
+
+				// ДОМАШНЕЕ ЗАДАНИЕ
+				// Добавляем элемент с результатами
+				let result = score + "/" + vsegoVoprosov + " правильных ответов";
+				$('body').append('Поздравляю! У тебя ' + result)
+			}
+		}
+
+		let questions = ['Сколько материков на планете Земля?', 'Сколько планет в Солнечной системе?'];
+		let answers = ['Мадрид', '6', '8'];
+		let score = 0;
+		let vsegoVoprosov = questions.length + 1;
+	</script>
+</body>
+</html>

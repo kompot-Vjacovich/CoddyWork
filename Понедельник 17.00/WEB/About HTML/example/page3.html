@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Единицы измерения в CSS</title>
+	<link rel="stylesheet" href="../style.css">
+	<style>
+		ol>b {
+			color: red;
+		}
+		li>b {
+			color: orangered;
+		}
+		p>b {
+			color: orange;
+		}
+	
+	</style>
+</head>
+<body>
+	<h1 class="h1">Единицы измерения в CSS</h1>
+	<main class="main">
+		<ol><b>Исключения, в которых % берётся не от родителя</b>
+			<li>
+				<b>margin-left</b>
+				<br>
+				<p>Процент берётся не от <b>margin-left</b> родителя, а от ширины родительского блока</p>
+			</li>
+			<li>
+				<b>line-height</b>
+				<br>
+				<p>Процент берётся не от <b>line-height</b>, от текущего размера шрифта</p>
+			</li>
+			<li>
+				<b>width/height</b>
+				<br>
+				<p>Процент берётся от ширины/высоты родителя, но при <b>position:fixed</b>, процент берётся от ширины/высоты экрана</p>
+			</li>
+		</ol>
+		
+		<h3>Единица измерения em</h3>
+
+		<p style="font-size: 120%;">Текст 1 %</p>
+		<p style="font-size: 1.2em">Текст 2 em</p>
+		
+		<h3>Единицы измерения относительно экрана</h3>
+		<ul>
+			<li><b>vw</b> - 1% ширины экрана</li>
+			<li><b>vh</b> - 1% высоты экрана</li>
+			<li><b>vmin</b> - наименьшее из (vw, vh)</li>
+			<li><b>vmax</b> - наибольшее из (vw, vh)</li>
+		</ul>
+
+	</main>
+</body>
+</html>

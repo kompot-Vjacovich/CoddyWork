@@ -1,0 +1,25 @@
+#canv {
+	background-color: #eee;
+}
+
+.wrap {
+	display: flex;
+	flex-wrap: wrap;
+	width: 300px;
+	justify-content: space-between;
+	margin: auto;
+}
+
+h1 {
+	text-align: center;
+}
+
+label, input, span {
+	width: 30%;
+	text-align: center;
+}
+
+button {
+	margin: auto;
+	margin-top: 20px;
+}

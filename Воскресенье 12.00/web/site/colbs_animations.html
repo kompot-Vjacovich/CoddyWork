@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+	<style>
+		.main {
+			margin: 10px auto 100px;
+			width: 500px;
+			border: dashed darkgray;
+			display: flex;
+		}
+		.first, .second, .third {
+			width: 100px;
+			height: 300px;
+			border: solid black 3px;
+			margin: auto;
+			position: relative;
+		}
+		#red, #green, #blue {
+			position: absolute;
+			bottom: 0;
+			font-size: 0;
+			text-align: center;
+			vertical-align: bottom;
+		}
+		#red {
+			background-color: red;
+			width: 100px;
+			height: 50px;
+			transition: 1.2s;
+		}
+		#green {
+			background-color: green;
+			width: 100px;
+			height: 130px;
+			transition: 1.2s;
+		}
+		#blue {
+			background-color: blue;
+			width: 100px;
+			height: 250px;
+			transition: 0.5s;
+		}
+		#red:hover {
+			background-color: salmon;
+			height: 300px;
+			transition: 0.4s;
+			font-size: 50px;
+			color: red;
+		}
+		#green:hover {
+			background-color: lime;
+			height: 300px;
+			transition: 0.4s;
+			font-size: 50px;
+			color: green;
+		}
+		#blue:hover {
+			background-color: dodgerblue;
+			height: 300px;
+			transition: 0.4s;
+			font-size: 50px;
+			color: blue;
+		}
+		.header {
+			margin: auto;
+			width: 170px;
+			height: 40px;
+			background-color: grey;
+			text-align: center;
+			font-size: 35px;
+			transition: 1.2s;
+			color: rgba(0, 0, 0, 0);
+		}
+		.header:hover {
+			width: 500px;
+			transition: 1s;
+			color: rgba(0, 0, 0, 1);
+		}
+	</style>
+<body>
+	<div class="header">Заголовок</div>
+	<div class="main">
+		<div class="first">
+			<div id="red">R</div>
+		</div>
+		<div class="second">
+			<div id="green">G</div>
+		</div>
+		<div class="third">
+			<div id="blue">B</div>
+		</div>
+	</div>
+</body>
+</html>

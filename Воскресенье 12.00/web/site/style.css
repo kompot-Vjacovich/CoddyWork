@@ -1,0 +1,51 @@
+body {
+	background-color: #9e2828;
+	margin: 20px;
+}
+p {
+	color: hotpink;
+	font-size: 30px;
+	font-family: 'Amatic SC';
+}
+h1 {
+	color: dodgerblue;
+	font-family: 'Lobster', cursive;
+	font-size: 50px;
+}
+div {
+	width: 60%;
+	margin: auto;
+	background-color: #331414;
+	padding: 50px;
+}	
+a{
+	text-decoration: none;
+	font-family: Arial;
+	font-size: 20px;
+	color: tomato;
+}
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+#header {
+	background-color: dodgerblue;
+	height: 20px;
+}
+#rightArrow {
+	width: 100px;
+	height: 50px;
+}
+#test {
+	text-decoration: none;
+	font-family: Arial;
+	font-size: 20px;
+	color: magenta;
+	border: 2px solid transparent;
+	transition: 0.3s ease-in;
+}
+#test:hover {
+	border-color: red;
+}
+/*colorhunt.co , htmlcolorcodes.com */

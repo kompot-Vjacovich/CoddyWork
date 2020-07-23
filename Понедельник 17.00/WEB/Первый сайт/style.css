@@ -1,0 +1,51 @@
+p {
+	color: darkblue;
+	font-size: 30px;
+	background-color: yellow;
+	width: 50%;
+	border: 5px dotted red;
+	font-family: 'Caveat', cursive;
+}
+body {
+	background-color: lightcyan;
+}
+img {
+	width: 30%;
+}
+.boat1 {
+	border: 10px dashed red;
+}
+.boat2 {
+	border: 10px dotted blue;
+}
+.boat3 {
+	border: 10px double green;
+}
+.boat4 {
+	border: 10px groove yellow;
+}
+.boat5 {
+	border: 10px ridge darkgray;
+}
+.boat6 {
+	border: 10px inset magenta;
+}
+.boat7 {
+	border: 10px orange;
+	border-style: solid dotted none dashed;
+}
+.boat8 {
+	border: 10px dashed;
+	border-color: black red green blue;
+}
+.boat9 {
+	border: inset blueviolet;
+	border-width: 5px 20px 25px 8px;
+}
+.box {
+	width: 95%;
+	height: 500px;
+	border: 10px ridge gray;
+	background: url(https://img2.goodfon.ru/original/2048x1365/2/92/priroda-nebo-oblaka-ozero.jpg);
+	background-size: cover;
+}

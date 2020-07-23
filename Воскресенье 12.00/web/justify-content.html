@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Justify-content</title>
+	<style>
+		.main {
+			width: 1000px;
+			height: 600px;
+			border: red solid 4px;
+			border-radius: 10px;
+			margin: auto;
+			padding-top: 40px;
+			/*Чтобы блоки размещались в строчку*/
+			display: flex;
+			/*с переносами*/
+			flex-wrap: wrap;
+		}
+		.wrapper {
+			height: 250px;
+			width: 300px;
+			/*border: gray solid 2px;*/
+			margin: auto;
+			position: relative;
+			font-size: 30px;
+			text-align: center;
+		}
+		.block {
+			width: 250px;
+			height: 50px;
+			left: 25px;
+			position: absolute;
+			top: 100px;
+			border: blue solid 2px;
+			display: flex;
+		}
+		.n {
+			height: 46px;
+			width: 46px;
+			border: 2px green solid;
+			background-color: orange;
+		}
+		.one {
+			justify-content: flex-start;
+		}
+		.two {
+			justify-content: flex-end;
+		}
+		.three {
+			justify-content: space-evenly;
+		}
+		.four {
+			justify-content: center;
+		}
+		.five {
+			justify-content: space-between;
+		}
+		.six {
+			justify-content: space-around;
+		}
+	</style>
+</head>
+<body>
+	<div class="main">
+		<div class="wrapper">flex-start (по-умолчанию)
+			<div class="block one">
+				<div class="n">1</div>
+				<div class="n">2</div>
+				<div class="n">3</div>
+			</div>
+		</div>
+		<div class="wrapper">flex-end
+			<div class="block two">
+				<div class="n">1</div>
+				<div class="n">2</div>
+				<div class="n">3</div>
+			</div>
+		</div>
+		<div class="wrapper">space-evenly
+			<div class="block three">
+				<div class="n">1</div>
+				<div class="n">2</div>
+				<div class="n">3</div>
+			</div>
+		</div>
+		<div class="wrapper">center
+			<div class="block four">
+				<div class="n">1</div>
+				<div class="n">2</div>
+				<div class="n">3</div>
+			</div>
+		</div>
+		<div class="wrapper">space-between
+			<div class="block five">
+				<div class="n">1</div>
+				<div class="n">2</div>
+				<div class="n">3</div>
+			</div>
+		</div>
+		<div class="wrapper">space-around
+			<div class="block six">
+				<div class="n">1</div>
+				<div class="n">2</div>
+				<div class="n">3</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 10px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+}
+
+.header {
+	display: flex;
+	position: relative;
+	width: 60%;
+	margin: auto;
+}
+
+.h1 {
+	font-size: 5rem;
+	line-height: 5rem;
+	position: absolute;
+	left: 80px;
+	bottom: -5px;
+}
+
+.main {
+	width: 60%;
+	margin: auto;
+	padding: 40px 1% 50px 1%;
+}
+
+.h3 {
+	font-size: 2rem;
+	margin-bottom: 10px;
+}
+
+.p {
+	font-weight: 400;
+	font-size: 1.1rem;
+	margin-bottom: 20px;
+}
+
+.img {
+	width: 100%;
+	margin-bottom: 40px;
+}

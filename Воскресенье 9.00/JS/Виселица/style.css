@@ -1,0 +1,20 @@
+body {
+	padding: 0;					/*внутрений отступ*/
+	background-color: black;	/*цвет фона*/
+}
+
+button {
+	width: 500px;				/*ширина*/
+	height: 100px;				/*высота*/
+	font-size: 50px;			/*размер шрифта*/
+	border-radius: 15px;		/*радиус скруглённых углов*/
+	outline: none;				/*отключение автоматической обводки*/
+	background-color: brown;	/*цвет фона*/
+	color: white;				/*цвет текста*/
+	border: 5px solid white;	/*ширина обводки, стиль обводки, цвет*/
+	margin-left: 10%;
+}
+
+p {
+	color: white;
+}

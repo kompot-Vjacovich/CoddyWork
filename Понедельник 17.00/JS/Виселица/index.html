@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Виселица</title>
+	<link rel="stylesheet" href="main.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jcanvas/21.0.1/jcanvas.js"></script>
+	<script src="script.js"></script>
+</head>
+<body>
+	<h1>Введите имя</h1>
+	<input type="text" id="name" autofocus oninput="checkName(this.value)">
+	<div id="tabu"></div>
+	<button id="play" onclick="main()" disabled>Играть</button>
+	<label for="skip">Остаться инкогнито</label>
+	<input type="checkbox" id="skip">
+</body>
+</html>

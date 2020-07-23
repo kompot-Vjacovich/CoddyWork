@@ -1,0 +1,10 @@
+#tabu {
+	display: none;
+	color: white;
+	background-color: red;
+	word-break: break-all;
+}
+
+.wrapper {
+	height: 200px;
+}

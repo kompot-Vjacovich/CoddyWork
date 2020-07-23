@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Памятка</title>
+	<style>
+		html {
+			font-size: 20px; 
+		}
+		li {
+			font-size: 0.8rem;
+		}
+	</style>
+</head>
+<body>
+	<h1>Единицы измерения в CSS</h1>
+
+	<ol><b style="font-size: 1.5em">Исключения, в которых % берётся не от родителя</b>
+		<li><b>margin-left</b><br>
+			<p>Процент берётся от ширины родительского блока, а не от margin-left родителя</p>
+		</li>
+		<li><b>line-height</b><br>
+			<p>Процент берётся от текущего размера шрифта, а не от line-height родителя</p>
+		</li>
+		<li><b>width/height</b><br>
+			<p>Процент берётся от ширины/высоты родителя, но при position:fixed, процент берётся от ширины/высоты экрана</p>
+		</li>
+	</ol>
+
+	<h3>Единица измерения rem: смесь px и em</h3>
+	<ul>
+		<li>Ученье
+			<ul>
+				<li> - свет,
+					<ul>
+						<li>а неученье
+							<ul>
+								<li> - тьма!</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+	</ul>
+
+	<ul><b>Единицы измерения относительно экрана</b>
+		<li><b>vw</b> - 1% ширины окна</li>
+		<li><b>vh</b> - 1% высоты окна</li>
+		<li><b>vmin</b> - наименьшее из (vw, vh)</li>
+		<li><b>vmax</b> - наибольшее из (vw, vh)</li>
+	</ul>
+
+	<ul><h2>Памятка по единицам измерения CSS</h2>
+		<li><b>px</b> - абсолютные пиксели, используются для максимально точного задания размеров</li>
+
+		<li><b>em</b> - задаёт размер относительно размера шрифта родителя</li>
+
+		<li><b>%</b> - относительно такого же свойства родителя, кроме исключений(смотри выше)</li>
+
+		<li><b>rem</b> - задаёт размер относительно размера шрифта html</li>
+
+		<li><b>vw, vh, vmin, vmax</b> - относительно размера экрана</li>
+	</ul>
+	<br>
+
+	<h1>Памятка по display</h1>
+
+	<h2>Значение none</h2>
+	<div style="border: 1px solid black">
+		Невидимый текст(
+		<div style="display:none">Я невидимый</div>
+		) в скобках
+	</div>
+
+	<h2>Значение block</h2>
+	<div style="border: 2px solid black">
+		<div style="border: 1px solid red; width: 50%">Первый</div>
+		<div style="border: 1px solid green">Второй</div>
+	</div>
+
+	<h2>Значение inline</h2>
+	<span style="border: 2px solid black">
+		<div style="display:inline; border: 1px solid red; width: 50%">Ширина</div>
+		<div style="display:inline; border: 1px solid green">игнорируется</div>
+	</span>
+</body>
+</html>

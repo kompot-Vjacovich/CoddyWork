@@ -1,0 +1,78 @@
+/*Эти свойства применяются ко всем элементам*/
+* {
+	margin: 0; 		/*Внешний отступ*/
+	padding: 0; 	/*Внутрений отсуп*/
+	box-sizing: border-box; /*Алгоритм расчёта размеров*/
+	-webkit-box-sizing: border-box;	/*То же самое, только для других браузеров*/
+	-moz-box-sizing: border-box;	/*То же самое, только для других браузеров*/
+}
+
+body {
+	background-color: #eee; 	/*Цвет фона всей страницы*/
+}
+
+/*Стили для элемента с id = "main"*/
+#main {
+	background-color: #fff;	/*Цвет фона для элемента с id = "main"*/
+	margin: auto;			/*Одинаковые внешние отступы*/
+	display: flex;			/*Отображение элементов в строчку*/
+	width: 95%;				/*Ширина элемента с id = "main"*/
+	max-width: 1000px;		/*Максимальная ширина элемента с id = "main"*/
+	box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);/*Тень объекта, rgba - указываем цвет и прозрачность*/
+	flex-wrap: wrap;		/*Правила переноса*/
+}
+
+/*Стили для элемента с class = "item"*/
+.item {
+	width: 100%;
+	height: 100%;
+	background-position: center;	/*Расположение фона по центру блока*/
+	background-size: 100% 100%;		/*Растягиваем фоновое изображение по ширине элемента*/
+	-moz-background-size: 100% 100%;
+	-webkit-background-size: 100% 100%;
+}
+/*Стили для элемента с class = "heading"*/
+.heading {
+	font-size: 48px;
+	text-align: center; /*Расположение текста по центру*/
+	width: 100%;
+	padding: 30px 0;
+	
+}
+
+.img-link {
+	display: block;
+	max-height: 280px;
+	max-width: 480px;
+	width: calc(50% - 10px);/*Вычисляем ширину элемента: половина родительского контейнера минус 10px*/
+	height: calc(95vw / 2 / 16 * 9);/*Вычисляем высоту элемента в соотношении 16:9*/
+	margin: 10px;
+	transition: 0.6s;
+}
+
+
+
+@media all and (max-width: 768px) {
+	.img-link {
+		max-height: initial;
+		max-width: initial;
+		width: 95vw;
+		height: calc(95vw / 16 * 9);
+		margin: 5px 0;
+	}
+}
+
+@media all and (min-width: 1200px) {
+	.img-link:hover {
+		transition: 0.8s ease-out;
+		transform: scale(1.2) rotate(5deg); 		
+		/*	scale -- масштабирование,
+			rotate -- поворот*/
+		box-shadow: 0 0 500px 1000px rgba(0, 0, 0, 1);
+	}
+
+	.heading:hover {
+		background: linear-gradient(45deg, red, yellow);
+		transition: 1s linear;
+	}
+}

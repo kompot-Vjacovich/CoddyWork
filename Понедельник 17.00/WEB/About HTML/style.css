@@ -1,0 +1,44 @@
+* {
+	box-sizing: border-box;	/*размеры считаются по границе border*/
+}
+body {
+	background-color: powderblue;
+	margin: 0;
+}
+
+.main, .h1 {
+	width: 65%;
+	margin: auto;	/*автоматический одинаковый отступ слева и справа*/
+}
+
+.h1 {
+	background-color: dodgerblue;
+	color: white;
+	text-align: center;	/*горизонтальное выравнивание текста по центру*/
+	padding: 15px 0;
+	font-family: 'Oswald', sans-serif;
+	font-size: 35px;
+}
+
+.main {
+	background-color: white;
+	padding: 20px 50px;
+	font-family: 'Source Code Pro', monospace;
+	font-size: 20px;
+	text-indent: 30px; /*отступ абзаца*/
+}
+
+img {
+	width: 100%;
+	margin-bottom: 50px;
+}
+
+a {
+	text-decoration: none;
+}
+
+.navigation {
+	color: white;
+	background-color: dodgerblue;
+	padding: 10px;
+}

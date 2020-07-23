@@ -1,0 +1,60 @@
+.img-box {
+	column-count: 4; 	/*Количество колонок*/
+	column-gap: 3px;	/*Отступ между колонками*/
+	width: 80%;
+	max-width: 1400px;
+	margin: auto;
+}
+
+.image {
+	max-width: 100%;
+	display: block;
+}
+
+.image-link {
+	display: block;
+}
+
+.image-link + .image-link {
+	margin: 3px 0;
+}
+
+@media all and (max-width: 1024px) {
+	.img-box {
+		width: 90%;
+		column-count: 3;
+	}
+}
+
+@media all and (max-width: 768px) {
+	.img-box {
+		column-count: 2;
+	}
+}
+
+@media all and (max-width: 480px) {
+	.img-box {
+		column-count: 1;
+	}
+}
+
+@media all and (min-width: 1200px) {
+	.image-link:hover {
+		filter: brightness(1.5);
+		transition: 0.2s; /*Плавность анимации*/
+	}
+}
+
+/*
+filter: url(resources.svg);
+filter: blur(5px);
+filter: brightness(0.4);
+filter: contrast(200%);
+filter: drop-shadow(16px 16px 20px blue);
+filter: grayscale(50%);
+filter: hue-rotate(90deg);
+filter: invert(75%);
+filter: opacity(25%);
+filter: saturate(30%);
+filter: sepia(60%);
+*/

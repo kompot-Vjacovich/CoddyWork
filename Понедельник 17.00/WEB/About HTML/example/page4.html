@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>display</title>
+	<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+	<h1 class="h1">Свойства display</h1>
+	<main class="main">
+		<h3>Значение none</h3>
+		<div style="border: 2px solid black;">
+			Невидимый div(<div style="display: none;">Я невидимка</div>) Стоит в скобках
+		</div>
+
+		<h3>Значение block</h3>
+		<ul>
+			<li>Блочные элементы распологаются один над другим вертикально.</li>
+			<li>Стремятся расшириться на всю доступную ширину.</li>
+			<li>Можно указать ширину и высоту.</li>
+		</ul>
+
+		<div style="border: 3px solid black;">
+			<div style="border: 2px solid red; width: 50%; height: 80px;">Первый</div>
+			<div style="border: 2px solid green; width: 70%;">Второй</div>
+		</div>
+
+		<h3>Значение inline</h3>
+		<ul>
+			<li>Элементы располагаются на той же строке, последовательно.</li>
+			<li>Ширина и высота элемента определяются по содержимому. Поменять их нельзя.</li>
+		</ul>
+		<span style="border: 3px solid black;">
+			<span style="border: 2px solid red; width: 50%; height: 80px;">Ширина</span><a style="border: 2px solid green; width: 70%;">Игнорируется</a>
+		</span>
+	</main>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Анкета</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Kelly+Slab|Russo+One&display=swap" rel="stylesheet">
+</head>
+<body>
+	<form onsubmit="return false">
+		<h1>Заявка на киберчемпионат</h1>
+		<p><i>Поля отмеченные <em>*</em> обязательные</i></p>
+		<fieldset>
+			<legend>Контактная информация</legend>
+			
+			<label for="f_name">Фамилия<em>*</em></label>
+			<input type="text" id="f_name" required placeholder="Иванов">
+			<br>
+			<label for="name">Имя<em>*</em></label>
+			<input type="text" id="name" required placeholder="Иван">
+			<br>
+			<label for="phone">Телефон</label>
+			<input type="tel" id="phone" placeholder="79783456723">
+			<br>
+			<label for="email">Электронная почта<em>*</em></label>
+			<input type="email" id="email" required placeholder="example@host.dom">
+		</fieldset>
+
+		<fieldset>
+			<legend>Персональная информация</legend>
+
+			<label for="age">Дата рождения<em>*</em></label>
+			<input type="date" id="age" required>
+			<br>
+			<label for="gender">Пол</label>
+
+			<label for="gender1"><input type="radio" id="gender1" name="gender">Мужской</label>
+			<label for="gender2"><input type="radio" id="gender2" name="gender">Женский</label>
+			<label for="gender3"><input type="radio" id="gender3" name="gender" checked>Другой</label>
+			<br>
+			<label for="city">Ваш город<em>*</em></label>
+			<select id="city">
+				<option value="default" disabled selected>Выберете город из списка</option>
+				<option value="Simf">Симферополь</option>
+				<option value="Sevas">Севастополь</option>
+				<option value="Yalta">Ялта</option>
+				<option value="Kerch">Керчь</option>
+			</select>
+			<br>
+			<label for="about">Расскажите о себе</label>
+			<textarea id="about" placeholder="I am pretty cool"></textarea>
+		</fieldset>
+
+		<fieldset>
+			<legend>Выберете игры, в которые Вы играли</legend>
+
+			<label for="CS"><input type="checkbox" id="CS">CS:GO</label>
+			<label for="MC"><input type="checkbox" id="MC">Minecraft</label>
+			<label for="OW"><input type="checkbox" id="OW">Overwatch</label>
+			<label for="WF"><input type="checkbox" id="WF">Warface</label>
+			<label for="COD"><input type="checkbox" id="COD">Call of Duty</label>
+			<label for="BF"><input type="checkbox" id="BF">Battlefield</label>
+			<label for="WOT"><input type="checkbox" id="WOT">World of Tanks</label>
+			<label for="HL"><input type="checkbox" id="HL">Half-Life</label>
+			<label for="PL"><input type="checkbox" id="PL">Portal</label>
+			<label for="GTA"><input type="checkbox" id="GTA">GTA</label>
+		</fieldset>
+		<p><input type="submit" value="Отправить информацию" onclick="main()"></p>
+	</form>
+</body>
+</html>

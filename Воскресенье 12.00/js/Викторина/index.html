@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Викторина</title>
+	<script src="script.js"></script>
+	<script src="theme.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="info">
+		<h1>Введите своё имя и начинайте тест</h1>
+		<input type="text" id="name" autofocus="true">
+		<button onclick="start()">Начать</button>
+	</div>
+	
+	<div id="theme">
+		<select id="color">
+			<option selected>Светлая тема</option>
+			<option>Тёмная тема</option>
+			<option>Премиум тема</option>
+		</select>
+		<button onclick="theme()">Установить</button>
+	</div>
+</body>
+</html>

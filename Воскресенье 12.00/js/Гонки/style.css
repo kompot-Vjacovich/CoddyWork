@@ -1,0 +1,43 @@
+body, html {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	/*Что будет если контент не влезит в эти размеры: он будет не виден*/
+	overflow: hidden;
+}
+
+.game {
+	width: 100%;
+	height: 100%;
+}
+
+#canv {
+	width: 100%;
+	height: 100%;
+	background-color: black;
+}
+
+#play {
+	position: absolute;
+	width: 200px;
+	height: 60px;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto auto;
+
+	background-color: #ffcb0f;
+	border: none;
+	font-family: 'Courier';
+	font-size: 30px;
+	font-weight: bold;
+	outline: none;
+	transition: 0.1s ease-out;
+}
+
+#play:hover {
+	transform: scale(1.2);
+	transition: 0.2s ease-in;
+}

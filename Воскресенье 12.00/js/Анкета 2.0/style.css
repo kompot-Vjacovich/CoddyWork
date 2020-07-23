@@ -1,0 +1,70 @@
+body {
+	padding: 0;
+}
+form {
+	width: 70%;
+	margin: auto;
+}
+h1, h1+p {
+	text-align: center;
+	font-family: 'Russo One', sans-serif;
+}
+h1 {margin-bottom: 0}
+p {margin-top: 0}
+legend {
+	font-family: 'Russo One', sans-serif;
+}
+fieldset {
+	margin-bottom: 20px;
+	padding: 20px;
+}
+em {
+	color: red;
+	font-weight: 600;
+}
+input, textarea {
+	width: 300px;
+}
+input[type="text"], 
+input[type="email"], 
+input[type="date"], 
+input[type="submit"],
+input[type="tel"],
+textarea {
+	border-radius: 10px;
+	outline: none;
+	resize: none;
+	padding: 5px 15px;
+}
+textarea {height: 100px;}
+
+input:focus, textarea:focus {
+	background-color: #eaeaea;
+}
+
+input[type="date"] {
+	width: 125px;
+}
+
+input[type="checkbox"], input[type="radio"] {
+	width: 20px;
+}
+select {
+	width: 200px;
+	outline: none;
+	border-radius: 10px;
+	padding: 3px 5px;
+}
+
+input[type="submit"] {
+	width: 200px;
+	font-family: 'Russo One', sans-serif;
+}
+
+label {
+	width: 150px;
+	display: inline-block;
+	vertical-align: top;
+	margin: 7px;
+	font-family: 'Kelly Slab';
+}

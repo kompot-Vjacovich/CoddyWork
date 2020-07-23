@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Функции</title>
+</head>
+<body>
+	<script>
+		function sum3(a, b, c) {
+			console.log("Первое число: "+a);
+			console.log("Второе число: "+b);
+			console.log("Третье число: "+c);
+
+			return a+b+c
+		}
+
+		const car = {
+			color: 'red',
+			speed: 200,
+			brand: 'Audi',
+			isDriving: false,
+			tuning: ['Спойлер', 'Ксенон'],
+			showTun: function() {
+				let tun = this.tuning.join(", ")
+				console.log("На этой машине " + this.brand + " установленны: " + tun);
+			},
+			addTun: function(tun) {
+				// с помощью push добавляем tun 
+				// в массив tunning
+				// вызываем showTun
+			},
+			delTun: function() {
+				// с помощью pop удаляем последний
+				// элемент из массива tunning
+				// вызываем showTun
+			}
+			drive: function(time) {
+				console.log("Поехали");
+				this.isDriving = true;
+				distance = time * this.speed;
+				console.log("Проехали " + distance + " км");
+				this.stop();
+			},
+			stop: function() {
+				console.log("Плавная остановочка");
+				this.isDriving = false;
+			}
+		};
+
+	</script>
+</body>
+</html>

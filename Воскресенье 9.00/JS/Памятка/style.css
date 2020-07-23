@@ -1,0 +1,19 @@
+table {
+	/*Обводка*/
+	/*border: толщина стиль цвет*/
+	border: 2px solid black;
+	/*Убираем промежутки между ячейками*/
+	border-collapse: collapse;
+	/*Ширина таблицы 80% относительно ширины экрана*/
+	width: 80%;
+	/*Выставляем таблицу на центр*/
+	margin: auto;
+}
+
+td {
+	border: 1px dashed black;
+}
+
+th {
+	border: 1px solid black;
+}

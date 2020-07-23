@@ -1,0 +1,80 @@
+.main {
+	/*border: 3px dashed gray;*/
+	width: 40%;
+	margin: auto;
+	display: flex;
+	margin-top: 50px;
+}
+
+.colbs {
+	width: 100px;
+	height: 300px;
+	border: 2px solid black;
+	margin: auto;
+	position: relative;
+}
+
+.colbs>div {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+
+#red {
+	height: 50px;
+	background-color: red;
+}
+
+#green {
+	height: 150px;
+	background-color: green;
+}
+
+#blue {
+	height: 250px;
+	background-color: blue;
+}
+
+.h1 {
+	width: 200px;
+	text-align: center;
+	margin: auto;
+	margin-top: 20px;
+	background-color: powderblue;
+	border-radius: 100px;
+	
+	transition: 0.4s;
+}
+
+.h1:hover {
+	transition: 1.5s;
+	width: 400px;
+}
+
+h1 {
+	opacity: 0;
+	transition: 0.4s;
+}
+
+.h1:hover h1 {
+	opacity: 1;
+	transition: 1.5s;
+}
+
+.colbs:nth-child(1):hover #red{
+	height: 100%;
+	cursor: progress;
+	transition: 1s ease-in-out;
+}
+
+.colbs:nth-child(2):hover #green{
+	height: 100%;
+	cursor: progress;
+	transition: 1s ease-out;
+}
+
+.colbs:nth-child(3):hover #blue{
+	height: 100%;
+	cursor: progress;
+	transition: 1s linear;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Canvas. Основы.</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+	<style>
+		#color {
+			width: 25px;
+			height: 25px;
+			background-color: rgba(255, 255, 255, 0);
+			border: 2px solid black;
+		}
+		.block {
+			display: flex;
+			justify-content: space-between;
+			width: 500px;
+		}
+	</style>
+</head>
+<body>
+	<canvas id="canv" width="500" height="500" style="border: 2px solid black">Если Вы читаете этот текст, то в Вашем браузере не поддерживается работа с Canvas</canvas>
+	<script src="script.js"></script>
+	<div class="block">
+		<p id="info">X: 0 Y: 0</p>
+		<div class="color-wrapper">
+			<div id="color"></div>
+			<p id="colorCode">(R:255, G:255, B:255, A:0)</p>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Списки</title>
+	<script src="script.js"></script>
+	<!-- Подключаем библиотеку, которая упрощает доступ к элементам -->
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+<body>
+	<!-- Сюда вставиться если before -->
+	<ol>
+		<!-- Сюда вставиться если prepend -->
+		<li>первый</li>
+		<li>второй</li>
+		<li>третий</li>
+		<!-- Сюда вставиться если append -->
+	</ol>
+	<!-- Сюда вставиться если after -->
+
+	<input type="text" id="txt">
+	<button onclick="Vkonec()" id="append">Вставить в конец</button>
+	<button onclick="Vnachalo()" id="prepend">Вставить в начало</button>
+	<button onclick="Do()" id="before">Вставить до</button>
+	<button onclick="Posle()" id="after">Вставить после</button>
+
+	<script>
+		function Vkonec() {
+			let newText = $('#txt').val();
+			$('ol').append('<li>' + newText + '</li>');
+			$('#txt').val('')
+		}
+		function Vnachalo() {
+			let newText = $('#txt').val();
+			$('ol').prepend('<li>' + newText + '</li>');
+			$('#txt').val('')
+		}
+		function Do() {
+			let newText = $('#txt').val();
+			$('ol').before('<li>' + newText + '</li>');
+			$('#txt').val('')
+		}
+		function Posle() {
+			let newText = $('#txt').val();
+			$('ol').after('<li>' + newText + '</li>');
+			$('#txt').val('')
+		}
+	</script>
+</body>
+</html>
